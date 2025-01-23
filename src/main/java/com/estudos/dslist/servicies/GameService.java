@@ -3,6 +3,7 @@ package com.estudos.dslist.servicies;
 import com.estudos.dslist.dto.GameDTO;
 import com.estudos.dslist.dto.GameMinDto;
 import com.estudos.dslist.entities.Game;
+import com.estudos.dslist.entities.GameList;
 import com.estudos.dslist.repositories.GameRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

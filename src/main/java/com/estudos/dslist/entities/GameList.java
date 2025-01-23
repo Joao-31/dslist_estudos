@@ -10,23 +10,23 @@ public class GameList {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
+    private Long id;
     private String name;
 
     public GameList() {
     }
 
-    public GameList(Long Id, String name) {
-        this.Id = Id;
+    public GameList(Long id, String name) {
+        this.id = id;
         this.name = name;
     }
 
     public Long getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Long id) {
-        Id = id;
+        id = id;
     }
 
     public String getName() {
@@ -41,11 +41,11 @@ public class GameList {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         GameList gameList = (GameList) o;
-        return Objects.equals(Id, gameList.Id);
+        return Objects.equals(id, gameList.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(Id);
+        return Objects.hashCode(id);
     }
 }
